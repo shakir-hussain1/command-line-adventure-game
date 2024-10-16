@@ -1,9 +1,8 @@
 #! /usr/bin/env node
-import inquirer from "inquirer";
+import inquirer from "inquirer"; //import module inquirer
 class Player {
-    name;
-    fuel = 100;
     constructor(name) {
+        this.fuel = 100;
         this.name = name;
     }
     fuelDecrease() {
@@ -15,9 +14,8 @@ class Player {
     }
 }
 class Opponent {
-    name;
-    fuel = 100;
     constructor(name) {
+        this.fuel = 100;
         this.name = name;
     }
     fuelDecrease() {
@@ -50,7 +48,7 @@ do {
                 name: "opt",
                 type: "list",
                 message: "What would you like to do?",
-                choices: ["Attack", "Drink Portion", "Run For Your Life.."]
+                choices: ["Attack", "Drink Portion", "Run For Your Life"]
             }
         ]);
         if (ask.opt == "Attack") {

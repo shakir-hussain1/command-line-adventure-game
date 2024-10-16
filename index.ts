@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import inquirer from "inquirer"
+import inquirer from "inquirer" //import module inquirer
 
 class Player{
     name:string;
@@ -57,7 +57,7 @@ do{
                 name: "opt",
                 type: "list",
                 message: "What would you like to do?",
-                choices: ["Attack","Drink Portion","Run For Your Life.."]
+                choices: ["Attack","Drink Portion","Run For Your Life"]
             }
         ]);
         if(ask.opt == "Attack"){
